@@ -1,0 +1,131 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Free Plumbing Quote | Pakenham, Officer &amp; Cardinia | (03) 9003 0108"
+  description="Get a free plumbing quote for your Pakenham, Officer, Cardinia Lakes, Lakeside, Heritage Springs or Cardinia Shire job &mdash; emergency, hot water, blocked drains, burst pipes or gas fitting. We reply within 1 business day. Urgent? Call (03) 9003 0108."
+  canonical="https://pakenhamplumbers.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free Quote</span>
+      <h1>Get a free plumbing quote.</h1>
+      <p class="hero-sub">
+        Tell us what&rsquo;s going on and where you are. For non-urgent jobs we&rsquo;ll
+        come back with a quote within 1 business day. If it&rsquo;s an emergency &mdash;
+        burst pipe, gas leak, sewer overflow, no hot water &mdash; please just call
+        <a href="tel:+61390030108" style="color:#fbbf24; text-decoration:underline;">(03) 9003 0108</a>
+        and we&rsquo;ll attend 24/7.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field" /></label></p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Pakenham 3810, Officer 3809, Beaconsfield 3807" />
+
+            <label for="service">What do you need?</label>
+            <select id="service" name="service">
+              <option value="not-sure">Not sure &mdash; need advice</option>
+              <option value="emergency">Emergency (burst pipe / gas leak / sewer / no hot water)</option>
+              <option value="blocked-drain">Blocked drain</option>
+              <option value="hot-water">Hot water repair or replacement</option>
+              <option value="burst-leak">Burst or leaking pipe</option>
+              <option value="gas-fitting">Gas fitting / appliance / gas leak</option>
+              <option value="taps-toilets">Taps, toilets &amp; fixtures</option>
+              <option value="new-build">New build / renovation plumbing</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="urgency">How urgent is it?</label>
+            <select id="urgency" name="urgency">
+              <option value="emergency">Emergency &mdash; need someone now (please also call)</option>
+              <option value="today">Today if possible</option>
+              <option value="this-week">This week</option>
+              <option value="flexible">Flexible / planning ahead</option>
+            </select>
+
+            <label for="property">Property type</label>
+            <select id="property" name="property">
+              <option value="estate-home">Estate home (Cardinia Lakes, Lakeside, Officer etc.)</option>
+              <option value="new-build">New build</option>
+              <option value="established">Established home</option>
+              <option value="acreage">Acreage / tank &amp; pump property</option>
+              <option value="rental">Rental / investment property</option>
+              <option value="commercial">Commercial / strata</option>
+            </select>
+
+            <label for="hot-water-type">If hot water: what type is it?</label>
+            <select id="hot-water-type" name="hot-water-type">
+              <option value="na">Not a hot water job</option>
+              <option value="gas-storage">Gas storage</option>
+              <option value="continuous-gas">Continuous-flow gas</option>
+              <option value="electric">Electric</option>
+              <option value="heat-pump">Heat pump</option>
+              <option value="solar">Solar</option>
+              <option value="not-sure">Not sure</option>
+            </select>
+
+            <label for="message">Tell us what&rsquo;s happening (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="e.g. no hot water since this morning, gas storage unit about 13 years old, Cardinia Lakes. Or: kitchen drain backing up, second time this year."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send my quote request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">We reply within 1 business day. Emergencies &mdash; please call (03) 9003 0108.</p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+61390030108">(03) 9003 0108</a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">24/7 for emergencies</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9978;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Full Cardinia Shire &mdash; Pakenham, Officer, Cardinia Lakes, Lakeside, Heritage Springs, Beaconsfield + the Cardinia growth corridor.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>A clear, fair quote &mdash; no surprises</li>
+                <li>Licensed plumber &amp; gas fitter</li>
+                <li>Certificate of Compliance on prescribed work</li>
+                <li>Same-day hot water &amp; emergency response</li>
+                <li>VBA-licensed, fully insured</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

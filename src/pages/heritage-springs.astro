@@ -1,0 +1,137 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer emergency plumbing in Heritage Springs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes &mdash; 24/7 emergency plumbing across the Heritage Springs estate (Pakenham 3810) for burst pipes, sewer overflows, gas leaks and no hot water. The larger multi-bathroom homes here mean more pipework and appliances to fail, so we cover the full range day or night. Call (03) 9003 0108." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are slab leaks a thing in Heritage Springs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Heritage Springs homes are concrete-slab construction with hot and cold pipework run within or under the slab. After 15-20 years a pinhole or joint failure under the slab shows as a warm floor patch and a creeping water bill. We use electronic and thermal leak detection to pinpoint the exact spot before opening anything, so the repair is targeted rather than ripping up a whole floor." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you handle multi-bathroom and gas appliance work in Heritage Springs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes &mdash; the larger Heritage Springs homes typically have multiple bathrooms, ensuites and several gas appliances. We handle multi-bathroom tapware and toilet renewals, large or twin hot water systems, and licensed gas appliance connections and carbon-monoxide testing, all to AS/NZS 3500 and AS/NZS 5601 with a Certificate of Compliance." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a plumber cost in Heritage Springs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Standard call-out and first hour is $130-$220 ($180-$330 after hours), a hot water replacement $1,400-$3,200 fitted, and slab-leak detection and repair $600-$1,200. Worked example: a Heritage Springs home with a slab leak under the lounge usually pays around $900 to detect, expose, repair and reinstate the affected section, with a Certificate of Compliance where the work is prescribed." }
+    }
+  ]
+};
+---
+<Layout
+  title="Plumber Heritage Springs Pakenham | Emergency, Hot Water, Leaks | (03) 9003 0108"
+  canonical="https://pakenhamplumbers.com.au/heritage-springs/"
+  description="Local plumber for Heritage Springs, Pakenham 3810 &mdash; 24/7 emergency, hot water, blocked drains, slab-leak detection &amp; gas fitting. Larger multi-bathroom homes with more pipework &amp; appliances. VBA-licensed, CoC on every job.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Heritage Springs &middot; Pakenham 3810</span>
+      <h1>Plumber in <span class="accent">Heritage Springs</span>.</h1>
+      <p class="hero-sub">
+        Heritage Springs is one of Pakenham&rsquo;s larger-home estates &mdash; multiple
+        bathrooms, ensuites and several gas appliances per house. More pipework and more
+        appliances means more to maintain, and after 15&ndash;20 years that includes
+        ageing hot water, slab leaks and gas-appliance work.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Heritage Springs</span>
+      <h2>The Heritage Springs plumbing story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Bigger homes, more to look after.</h3>
+        <p>
+          A typical Heritage Springs home has two or three bathrooms, an ensuite, a kitchen
+          and laundry, and several gas appliances. That is a lot more tapware, toilets,
+          waste lines and connections than a small block &mdash; and more of it failing at
+          once now the estate is 15&ndash;20 years old. We are happy to work through a list
+          of jobs in a single visit to save you repeat call-out fees.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Slab leaks.</h3>
+        <p>
+          Heritage Springs homes are concrete-slab built with pipework run within or under
+          the slab. After two decades a pinhole or joint failure under the slab shows up as
+          a warm floor patch and a creeping water bill. We use electronic and thermal
+          <a href="/services/burst-leaking-pipes/">leak detection</a> to pinpoint the exact
+          spot before opening anything &mdash; worked example, a slab leak under the lounge
+          usually costs around $900 to detect, expose, repair and reinstate, rather than
+          ripping up a whole floor on guesswork.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Twin &amp; large hot water systems.</h3>
+        <p>
+          Larger Heritage Springs homes often run a bigger or even a second hot water unit
+          to serve multiple bathrooms. As the originals hit the 10&ndash;15 year window we
+          replace them &mdash; including upsizing or moving to continuous-flow gas or a
+          heat pump where it suits the household. See
+          <a href="/services/hot-water-systems/">hot water systems</a>.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Gas appliances &amp; CO testing.</h3>
+        <p>
+          With several gas appliances per home, <a href="/services/gas-fitting/">gas
+          fitting</a> is regular work here &mdash; cooktop and heater connections, new gas
+          points, and carbon-monoxide testing on ageing ducted and space heaters that can
+          develop cracked heat exchangers. Every gas job is done to AS/NZS 5601 with a
+          Certificate of Compliance.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Heritage Springs jobs.</h3>
+        <ul>
+          <li>Slab-leak detection &amp; repair &mdash; ~$600&ndash;$1,200</li>
+          <li>Twin or upsized hot water replacement &mdash; ~$1,400&ndash;$3,200</li>
+          <li>Multi-bathroom tapware, mixer and toilet renewals</li>
+          <li><a href="/services/blocked-drains/">Blocked drains</a> from maturing garden trees</li>
+          <li>Gas appliance connections and CO testing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Need a plumber in Heritage Springs?</h2>
+        <p>Slab leaks, hot water, multi-bathroom work, gas &mdash; all licensed, all with a CoC.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Get a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

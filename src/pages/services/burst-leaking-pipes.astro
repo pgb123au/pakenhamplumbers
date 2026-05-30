@@ -1,0 +1,143 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to fix a burst or leaking pipe in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A burst or leaking pipe repair in Pakenham and Cardinia typically runs $250-$700 depending on access and the pipe. Electronic leak detection to pinpoint a hidden leak is usually $200-$450. Worked example: a Heritage Springs home with a slab leak showing as a warm patch on the floor and a creeping water bill usually pays around $600-$1,200 to detect the leak location electronically, expose and repair or re-route the affected section, and reinstate &mdash; far less than ripping up a whole floor on guesswork." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if I have a hidden water leak?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tell-tale signs are a water bill that keeps climbing for no reason, the water meter ticking over when every tap is off, a damp or warm patch on a floor or wall, the sound of running water in a wall, or mould and peeling paint. We use electronic leak detection and thermal imaging to find the exact spot before opening anything, so the repair is targeted &mdash; not exploratory demolition." }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do the moment a pipe bursts?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Turn the water off at the mains meter (usually near the front boundary), then open a tap to drain the pressure out of the system. Move valuables and electrical items away from the water and switch off power at the board if water is near power points. Then call us on (03) 9003 0108 &mdash; a burst pipe flooding the house is a 24/7 emergency and we attend day or night." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do burst pipes happen more in winter in Cardinia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Single-digit Cardinia winter nights and the occasional frost stress exposed and poorly lagged pipes, and ageing copper and old braided flexi-hoses in the early-2000s Cardinia Lakes and Lakeside estates are more likely to fail under that thermal stress. Failed flexi-hoses under sinks and vanities are one of the most common causes of indoor flooding &mdash; we recommend replacing them every 5-7 years before they let go." }
+    }
+  ]
+};
+---
+<Layout
+  title="Burst &amp; Leaking Pipes Pakenham | Leak Detection &amp; Repair | (03) 9003 0108"
+  canonical="https://pakenhamplumbers.com.au/services/burst-leaking-pipes/"
+  description="Burst pipe &amp; leak repair for Pakenham, Officer, Cardinia Lakes &amp; Cardinia Shire. Electronic leak detection, pipe repair &amp; relining for burst, corroded &amp; slab-leak pipework. We isolate fast to stop water damage. From $250.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Find it, isolate it, fix it</span>
+      <h1>Burst &amp; leaking pipes in <span class="accent">Pakenham &amp; Cardinia</span>.</h1>
+      <p class="hero-sub">
+        A burst pipe floods a home fast; a hidden leak wastes water and rots the building
+        slowly. We use electronic leak detection to pinpoint the problem, then repair,
+        re-route or reline the pipework &mdash; minimising both the damage and the dig.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Burst pipes &amp; hidden leaks.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Burst pipes &mdash; stop the flood first.</h3>
+        <p>
+          When a pipe bursts, every minute is water through the house. The moment you call
+          we talk you through turning the mains off at the meter and draining the pressure,
+          then attend, isolate the failed section, repair or replace it and dry-test. A
+          burst pipe flooding the home is a <a href="/services/emergency-plumber/">24/7
+          emergency</a> &mdash; we attend day or night. Repairs typically run
+          <strong>$250&ndash;$700</strong> depending on access and pipe type.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Electronic leak detection &mdash; no guesswork.</h3>
+        <p>
+          A leak you cannot see &mdash; behind a wall, under a slab, in the yard &mdash;
+          shows up as a climbing water bill, a meter ticking with the taps off, a damp or
+          warm patch, or the sound of running water in a wall. We use acoustic leak
+          detection and thermal imaging to find the exact spot before opening anything, so
+          the repair is targeted rather than exploratory demolition. Detection is usually
+          <strong>$200&ndash;$450</strong>.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Slab leaks.</h3>
+        <p>
+          On Pakenham&rsquo;s concrete-slab estate homes a leak in the under-slab pipework
+          shows as a warm floor patch and a rising bill. Worked example: a Heritage
+          Springs home with a slab leak usually pays around <strong>$600&ndash;$1,200</strong>
+          to detect the leak location electronically, expose and repair or re-route the
+          affected section, and reinstate &mdash; far less than ripping up a whole floor on
+          guesswork.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why winter is the busy season.</h3>
+        <p>
+          Single-digit Cardinia winter nights and the occasional frost stress exposed and
+          poorly lagged pipes, and ageing copper plus old braided flexi-hoses in the
+          early-2000s <strong>Cardinia Lakes and Lakeside</strong> estates are more likely
+          to fail under that thermal stress. Failed flexi-hoses under sinks and vanities
+          are one of the most common causes of indoor flooding &mdash; we recommend
+          replacing them every 5&ndash;7 years before they let go.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pipework we repair.</h3>
+        <ul>
+          <li>Burst and split copper, PEX and poly pipe</li>
+          <li>Corroded and pinhole-leaking old copper in the established estates</li>
+          <li>Failed braided flexi-hoses under sinks and vanities</li>
+          <li>Slab leaks and concealed wall leaks (electronic detection)</li>
+          <li>Leaking taps, toilets, valves and connections</li>
+        </ul>
+        <p style="margin-top:1rem;">
+          All repairs are done to <strong>AS/NZS 3500</strong>, with a Certificate of
+          Compliance where the work is prescribed under the Victorian Plumbing Regulations
+          2018.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Pipe burst or leaking in Pakenham?</h2>
+        <p>We pinpoint the leak and fix it &mdash; minimal dig, minimal damage. Flooding now? Call straight away.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Get a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

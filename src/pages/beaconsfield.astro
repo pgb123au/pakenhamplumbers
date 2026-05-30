@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you do emergency plumbing in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes &mdash; 24/7 emergency plumbing across Beaconsfield 3807 for burst pipes, no hot water, gas leaks and flooding. Beaconsfield's mix of established homes and larger/acreage blocks means a range of pipework ages and, on some properties, tank and septic-adjacent systems too. Call (03) 9003 0108 any time." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work on acreage and tank-water properties in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Beaconsfield's larger and acreage blocks often have rainwater tanks, pumps and pressure systems alongside mains plumbing, and some have septic or on-site wastewater. We service tank and pump plumbing, pressure issues, and the household plumbing on these properties, working to AS/NZS 3500 with a Certificate of Compliance on prescribed work." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a hot water replacement cost in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A like-for-like gas or electric storage changeover in Beaconsfield is typically $1,400-$2,600 fitted, and a heat pump $2,800-$4,500 before rebates. Worked example: a premium Beaconsfield home replacing a failed unit with a higher-spec continuous-flow gas system usually pays around $2,400-$2,900 fitted, including removal, the new unit, a tempering valve and a Certificate of Compliance." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you licensed to do gas fitting in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes &mdash; VBA-licensed for gas, working to AS/NZS 5601. We connect gas appliances and points, repair gas leaks, and carbon-monoxide test heaters, issuing a Certificate of Compliance on every prescribed job. Premium Beaconsfield homes often have multiple gas appliances and high-end fixtures, all of which we handle." }
+    }
+  ]
+};
+---
+<Layout
+  title="Plumber Beaconsfield | Emergency, Hot Water, Acreage, Gas | (03) 9003 0108"
+  canonical="https://pakenhamplumbers.com.au/beaconsfield/"
+  description="Local plumber for Beaconsfield 3807 &mdash; 24/7 emergency, hot water, blocked drains, gas fitting, plus tank/pump &amp; premium-fixture work for established &amp; acreage homes. VBA-licensed, CoC on every job.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Beaconsfield &middot; 3807</span>
+      <h1>Plumber in <span class="accent">Beaconsfield</span>.</h1>
+      <p class="hero-sub">
+        Beaconsfield blends established township homes with larger and acreage blocks on
+        the Pakenham fringe. That means everything from everyday hot water and drain work
+        to tank, pump and premium-fixture plumbing &mdash; plus the 24/7 emergencies that
+        don&rsquo;t care what kind of block you&rsquo;re on.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Beaconsfield</span>
+      <h2>The Beaconsfield plumbing story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Established homes &amp; premium fixtures.</h3>
+        <p>
+          Beaconsfield&rsquo;s established and higher-end homes tend to have better fixtures
+          and more of them &mdash; quality mixers, multiple bathrooms, gas appliances and
+          sometimes a second hot water unit. We renew and repair premium tapware properly
+          and handle the multi-fixture, multi-appliance scope these homes carry.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Acreage: tanks, pumps &amp; pressure.</h3>
+        <p>
+          Larger and acreage Beaconsfield blocks often run rainwater tanks, pumps and
+          pressure systems alongside mains plumbing, and some have septic or on-site
+          wastewater. We service tank and pump plumbing, chase down pressure problems, and
+          look after the household plumbing on these properties &mdash; all to AS/NZS 3500
+          with a Certificate of Compliance on prescribed work.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Hot water &amp; gas.</h3>
+        <p>
+          As units reach the 10&ndash;15 year mark we replace them &mdash; like-for-like, or
+          upgrading to continuous-flow gas or a rebate-eligible heat pump. See
+          <a href="/services/hot-water-systems/">hot water systems</a>. Premium homes often
+          carry several gas appliances, so licensed <a href="/services/gas-fitting/">gas
+          fitting</a> and carbon-monoxide testing on ageing heaters is regular work, always
+          to AS/NZS 5601 with a CoC.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Drains &amp; leaks.</h3>
+        <p>
+          Established Beaconsfield gardens have mature trees that send roots into the sewer
+          and stormwater lines &mdash; we CCTV, hydro-jet and reline as needed (see
+          <a href="/services/blocked-drains/">blocked drains</a>). Concealed and slab leaks
+          on older homes are pinpointed with electronic <a href="/services/burst-leaking-pipes/">leak
+          detection</a> before we open anything.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Beaconsfield jobs.</h3>
+        <ul>
+          <li>Hot water replacement / upgrade &mdash; ~$1,400&ndash;$2,900 fitted</li>
+          <li>Rainwater tank, pump and pressure-system service &amp; repair</li>
+          <li>Premium tapware and multi-bathroom fixture renewals</li>
+          <li>Tree-root blocked sewer: CCTV + hydro-jet + reline</li>
+          <li>Gas appliance connections and carbon-monoxide testing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Need a plumber in Beaconsfield?</h2>
+        <p>Township or acreage. Hot water, tanks &amp; pumps, gas, emergencies &mdash; licensed, CoC on every job.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Get a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

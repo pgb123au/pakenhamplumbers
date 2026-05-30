@@ -1,0 +1,233 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogType?: string;
+}
+
+const SITE = 'https://pakenhamplumbers.com.au';
+const PHONE_DISPLAY = '(03) 9003 0108';
+const PHONE_TEL = '+61390030108';
+const EMAIL = 'quotes@pakenhamplumbers.com.au';
+const BIZ_NAME = 'Pakenham Plumbers';
+
+const { title, description, canonical = SITE + '/', ogType = 'website' } = Astro.props;
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "@id": SITE + "/#business",
+  "name": BIZ_NAME,
+  "image": SITE + "/images/og-image.jpg",
+  "url": SITE,
+  "telephone": PHONE_TEL,
+  "priceRange": "$$",
+  "description": "Local licensed plumbers serving Pakenham, Officer, Cardinia Lakes and the Cardinia Shire. 24/7 emergency plumbing, blocked drains, hot water systems, burst & leaking pipes, and gas fitting. VBA-licensed, AS/NZS 3500 & AS/NZS 5601 compliant, Certificate of Compliance on every job.",
+  "areaServed": [
+    { "@type": "City", "name": "Pakenham", "containedInPlace": { "@type": "AdministrativeArea", "name": "Cardinia Shire" } },
+    { "@type": "City", "name": "Officer" },
+    { "@type": "City", "name": "Cardinia Lakes" },
+    { "@type": "City", "name": "Lakeside" },
+    { "@type": "City", "name": "Heritage Springs" },
+    { "@type": "City", "name": "Beaconsfield" },
+    { "@type": "City", "name": "Nar Nar Goon" },
+    { "@type": "City", "name": "Pakenham Upper" },
+    { "@type": "City", "name": "Beaconsfield Upper" },
+    { "@type": "City", "name": "Gembrook" },
+    { "@type": "City", "name": "Maryknoll" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pakenham",
+    "addressRegion": "VIC",
+    "postalCode": "3810",
+    "addressCountry": "AU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -38.0814,
+    "longitude": 145.4842
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  }],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Plumbing Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "24/7 Emergency Plumber" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Blocked Drains" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hot Water Systems" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Burst & Leaking Pipes" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gas Fitting & Leaks" }}
+    ]
+  }
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": SITE + "/#website",
+  "url": SITE + "/",
+  "name": BIZ_NAME,
+  "inLanguage": "en-AU",
+  "publisher": { "@id": SITE + "/#business" }
+};
+// BreadcrumbList JSON-LD auto-generated from Astro.url.pathname
+const pathname = Astro.url.pathname;
+const breadcrumbSegments = pathname.split('/').filter(Boolean);
+const breadcrumbItems = [{ "@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/" }];
+let cumulative = SITE;
+breadcrumbSegments.forEach((seg, i) => {
+  cumulative += '/' + seg;
+  // Human-friendly name: kebab → Title Case, special-case 'services' → Services
+  const friendly = seg === 'services'
+    ? 'Services'
+    : seg.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+  breadcrumbItems.push({
+    "@type": "ListItem",
+    "position": i + 2,
+    "name": friendly,
+    "item": cumulative + '/'
+  });
+});
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": breadcrumbItems
+};
+
+---
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonical}>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#14304a">
+
+  <meta property="og:type" content={ogType}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={canonical}>
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:site_name" content={BIZ_NAME}>
+  <meta property="og:image" content={SITE + "/images/og-image.jpg"}>
+  <meta property="og:image:secure_url" content={SITE + "/images/og-image.jpg"}>
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content={BIZ_NAME + " — free quote, call today"}>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={SITE + "/images/og-image.jpg"}>
+  <meta name="twitter:image:alt" content={BIZ_NAME + " — free quote, call today"}>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Playfair+Display:wght@900&family=Stardos+Stencil:wght@700&display=swap">
+
+  <meta name="google-site-verification" content="GSC-TOKEN-PLACEHOLDER">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LXWL6KHSJ1"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LXWL6KHSJ1', {
+      'send_page_view': true,
+      'anonymize_ip': true
+    });
+  </script>
+
+  <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <slot name="head" />
+</head>
+<body>
+  <div class="top-bar">
+    <span>24/7 emergency plumbing &middot; Pakenham &middot; Officer &middot; Cardinia Shire &middot; Call <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a></span>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="/" aria-label="Pakenham Plumbers home">
+        <img src="/images/logo.svg" alt="Pakenham Plumbers" width="320" height="80" decoding="async">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/services/emergency-plumber/">Emergency</a></li>
+        <li><a href="/services/blocked-drains/">Blocked Drains</a></li>
+        <li><a href="/services/hot-water-systems/">Hot Water</a></li>
+        <li><a href="/services/burst-leaking-pipes/">Burst Pipes</a></li>
+        <li><a href="/services/gas-fitting/">Gas Fitting</a></li>
+        <li><a href="/cardinia-shire/">Areas</a></li>
+      </ul>
+      <a class="nav-cta" href="/quote/">Free Quote</a>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Pakenham Plumbers</h4>
+        <p style="margin-bottom: 0.75rem;">Local licensed plumbers serving Pakenham, Officer, Cardinia Lakes and the Cardinia Shire. 24/7 emergency call-outs, blocked drains, hot water, burst pipes and gas fitting. VBA-licensed, Certificate of Compliance on every job.</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Phone:</strong> <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a></p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Hours:</strong> 24/7 for emergencies</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Service area:</strong> Pakenham VIC 3810 &amp; Cardinia Shire</p>
+        <p style="margin-bottom: 0;"><strong style="color:#fff;">ABN:</strong> 91 664 546 061</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/emergency-plumber/">24/7 emergency plumber</a></li>
+          <li><a href="/services/blocked-drains/">Blocked drains</a></li>
+          <li><a href="/services/hot-water-systems/">Hot water systems</a></li>
+          <li><a href="/services/burst-leaking-pipes/">Burst &amp; leaking pipes</a></li>
+          <li><a href="/services/gas-fitting/">Gas fitting &amp; leaks</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="/officer/">Officer</a></li>
+          <li><a href="/cardinia-lakes/">Cardinia Lakes</a></li>
+          <li><a href="/lakeside/">Lakeside</a></li>
+          <li><a href="/heritage-springs/">Heritage Springs</a></li>
+          <li><a href="/beaconsfield/">Beaconsfield</a></li>
+          <li><a href="/cardinia-shire/">All Cardinia Shire</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">
+      &copy; {new Date().getFullYear()} {BIZ_NAME} &middot; Yes Right Pty Ltd ABN 91 664 546 061. Licensed plumbing &amp; gas fitting across Pakenham and the Cardinia Shire.
+    </p>
+  </footer>
+
+  <a class="mobile-phone" href={`tel:${PHONE_TEL}`} aria-label={`Call ${PHONE_DISPLAY}`}>
+    <span aria-hidden="true">&#9742;</span> Call {PHONE_DISPLAY}
+  </a>
+</body>
+</html>

@@ -1,0 +1,136 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you do emergency plumbing in Lakeside?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes &mdash; 24/7 emergency plumbing across the Lakeside estate (Pakenham 3810) for burst pipes, sewer overflows, gas leaks and no hot water. Lakeside's mix of ducted-gas-and-evap homes and ageing pipework means winter no-hot-water and burst-pipe call-outs are common here. Call (03) 9003 0108 any time." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my Lakeside home keep getting blocked drains?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Lakeside is an established family estate and its garden and street trees are now mature, sending roots into the sewer and stormwater lines. Recurring tree-root blockages are common. We CCTV the line to map exactly where roots enter, hydro-jet and cut them, and can reline cracked sections without digging so the problem doesn't keep coming back." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much is a hot water replacement in Lakeside?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A like-for-like gas or electric storage changeover in Lakeside is typically $1,400-$2,600 fitted, and a heat-pump upgrade $2,800-$4,500 before rebates. Worked example: a Lakeside family replacing a failed 13-year-old gas storage unit usually pays around $2,100 same-day, including removal, the new unit, a tempering valve and a Certificate of Compliance." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you a licensed plumber and gas fitter for Lakeside?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes &mdash; VBA-licensed for both plumbing (AS/NZS 3500) and gas (AS/NZS 5601). We issue a Certificate of Compliance on prescribed work and carbon-monoxide test ageing gas heaters, which matters for Lakeside's older ducted-gas homes." }
+    }
+  ]
+};
+---
+<Layout
+  title="Plumber Lakeside Pakenham | Emergency, Hot Water, Drains, Gas | (03) 9003 0108"
+  canonical="https://pakenhamplumbers.com.au/lakeside/"
+  description="Local plumber for the Lakeside estate, Pakenham 3810 &mdash; 24/7 emergency, blocked drains, hot water, burst pipes &amp; gas fitting. Established family estate with ageing ducted-gas &amp; evap homes and recurring tree-root drains. VBA-licensed.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Lakeside &middot; Pakenham 3810</span>
+      <h1>Plumber in <span class="accent">Lakeside</span>.</h1>
+      <p class="hero-sub">
+        Lakeside is an established Pakenham family estate &mdash; a steady stream of
+        everyday plumbing: ageing hot water units, taps and toilets reaching the end of
+        their seals, recurring tree-root drains and the winter burst-pipe and no-hot-water
+        emergencies that come with cold Cardinia mornings.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Lakeside</span>
+      <h2>The Lakeside plumbing story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Family estate, everyday plumbing.</h3>
+        <p>
+          Lakeside families generate the recurring, bread-and-butter plumbing that an
+          established estate produces &mdash; a tap that has started dripping, a toilet
+          that runs, a hot water unit losing its recovery, a slow-draining shower. We turn
+          these around fast and properly, and we are happy to fix several small jobs in one
+          visit to save you a second call-out fee.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Hot water at the replacement window.</h3>
+        <p>
+          Like the rest of the early-2000s corridor, Lakeside&rsquo;s original hot water
+          units are now 10&ndash;15 years old and failing in batches, usually on the
+          coldest mornings. We can do a same-day
+          <a href="/services/hot-water-systems/">hot water replacement</a> &mdash;
+          like-for-like gas or electric, or a rebate-eligible heat-pump upgrade &mdash;
+          with a tempering valve and Certificate of Compliance.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Recurring tree-root drains.</h3>
+        <p>
+          Lakeside&rsquo;s mature garden and street trees send roots into the sewer and
+          stormwater lines, causing the recurring <a href="/services/blocked-drains/">blocked
+          drains</a> that frustrate established-estate owners. We CCTV the line to map the
+          exact root-entry points, hydro-jet and cut the roots, and reline cracked sections
+          without digging so it stops coming back.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Ageing ducted gas &amp; CO testing.</h3>
+        <p>
+          Many Lakeside homes still run the original ducted gas heating. Older gas heaters
+          can develop cracked heat exchangers that leak carbon monoxide &mdash; odourless
+          and dangerous &mdash; so we carbon-monoxide test as part of any
+          <a href="/services/gas-fitting/">gas work</a> and recommend a CO check before
+          winter on any heater that has never had one.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Lakeside jobs.</h3>
+        <ul>
+          <li>Same-day hot water changeover &mdash; ~$1,400&ndash;$2,600</li>
+          <li>Recurring tree-root sewer: CCTV + hydro-jet + reline quote &mdash; ~$450&ndash;$650</li>
+          <li>Tap, toilet and mixer renewals as the estate&rsquo;s fixtures age</li>
+          <li>Winter <a href="/services/burst-leaking-pipes/">burst pipe</a> and no-hot-water emergencies</li>
+          <li>Gas heater carbon-monoxide testing and appliance connections</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Need a plumber in Lakeside?</h2>
+        <p>Emergency or everyday. Hot water, drains, gas &mdash; fast, licensed, CoC on every job.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Get a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

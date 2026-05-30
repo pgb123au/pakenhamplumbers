@@ -1,0 +1,147 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How fast can an emergency plumber get to Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Because we are based in and around the Cardinia growth corridor, we usually reach Pakenham, Officer, Cardinia Lakes, Lakeside and Heritage Springs quickly even after hours. We will give you a realistic ETA when you call and talk you through how to make the situation safe &mdash; isolating the water at the meter or the gas at the regulator &mdash; while we are on the way." }
+    },
+    {
+      "@type": "Question",
+      "name": "What counts as a plumbing emergency?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A burst or gushing pipe, sewage backing up into the house, a gas leak or gas smell, no hot water in winter, an overflowing toilet you cannot stop, a hot water unit leaking onto the floor, or any flooding. If water or gas is escaping and you cannot stop it, treat it as an emergency and call (03) 9003 0108. For a gas leak, turn the gas off at the meter, open windows, avoid switches and flames, and get everyone outside." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does an after-hours emergency plumber cost in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "An after-hours emergency call-out in Pakenham and Cardinia typically runs $180-$330 for the call-out and first hour, then a fair hourly rate plus parts. Worked example: a Lakeside home with a burst flexi-hose under the kitchen sink flooding the floor at 10pm usually pays around $280-$420 to attend, isolate, replace the failed braided hose with a quality unit, check the others, and dry-test &mdash; with a Certificate of Compliance where the work is prescribed." }
+    },
+    {
+      "@type": "Question",
+      "name": "I have a gas leak in Pakenham &mdash; what should I do right now?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Turn the gas off at the meter, open doors and windows to ventilate, do NOT turn lights or switches on or off, do not use a phone inside near the leak, put out any flames, get everyone outside, then call us on (03) 9003 0108 from outside. We are licensed gas fitters working to AS/NZS 5601 and will make the gas safe, find the leak and carbon-monoxide test the appliances before reconnecting." }
+    }
+  ]
+};
+---
+<Layout
+  title="24/7 Emergency Plumber Pakenham | Burst Pipe, Gas Leak | (03) 9003 0108"
+  canonical="https://pakenhamplumbers.com.au/services/emergency-plumber/"
+  description="24/7 emergency plumber for Pakenham, Officer, Cardinia Lakes, Lakeside &amp; the Cardinia Shire. Burst pipes, sewer overflows, gas leaks, no hot water, flooding &mdash; rapid response day or night. VBA-licensed.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">24/7 rapid response</span>
+      <h1>Emergency plumber in <span class="accent">Pakenham &amp; Cardinia</span>.</h1>
+      <p class="hero-sub">
+        Burst pipes, sewer overflows, gas leaks, no hot water and flooding &mdash;
+        attended day or night across Pakenham, Officer, Cardinia Lakes, Lakeside,
+        Heritage Springs and Beaconsfield. We isolate the problem fast to stop the
+        damage, then fix it properly.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Non-urgent? Get a quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What we attend, day or night.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Burst &amp; gushing pipes.</h3>
+        <p>
+          A burst pipe or a failed braided flexi-hose under a sink can put hundreds of
+          litres through a Pakenham home in an hour. We talk you through turning the
+          water off at the meter the moment you call, then attend, isolate, repair or
+          replace the failed section and dry-test. Cold July nights and ageing copper in
+          the early-2000s Cardinia Lakes and Lakeside estates make winter the busiest
+          burst-pipe season. See more on <a href="/services/burst-leaking-pipes/">burst
+          &amp; leaking pipes</a>.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Sewer overflows &amp; major blockages.</h3>
+        <p>
+          Sewage backing up into a shower or overflowing a gully trap is an emergency &mdash;
+          it is a health hazard and it gets worse fast. The cause is usually a fully
+          blocked sewer line, often tree roots in the maturing estate streets. We clear
+          it on the spot with a hydro-jet and, where needed, CCTV the line to find the
+          cause. More on <a href="/services/blocked-drains/">blocked drains</a>.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Gas leaks &amp; gas smells.</h3>
+        <p>
+          If you can smell gas, turn it off at the meter, ventilate, avoid switches and
+          flames, get everyone outside and call us. We are licensed gas fitters &mdash; we
+          make the gas safe, leak-test to <strong>AS/NZS 5601</strong>, carbon-monoxide
+          test the appliances (important on ageing gas ducted and storage units in the
+          older estates) and only reconnect when it is safe. More on
+          <a href="/services/gas-fitting/">gas fitting &amp; leaks</a>.
+        </p>
+
+        <h3 style="margin-top: 2rem;">No hot water in winter.</h3>
+        <p>
+          No hot water on a single-digit Cardinia morning is an emergency for a family
+          with kids. We diagnose fast &mdash; a tripped element, a failed thermocouple, a
+          dead unit &mdash; and can usually repair on the spot or replace the unit the same
+          day. See <a href="/services/hot-water-systems/">hot water systems</a>.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What it costs.</h3>
+        <p>
+          An after-hours emergency call-out and first hour in Pakenham and Cardinia
+          typically runs <strong>$180&ndash;$330</strong>, then a fair hourly rate plus
+          parts. Worked example: a Lakeside home with a burst flexi-hose under the kitchen
+          sink flooding the floor at 10pm usually pays around <strong>$280&ndash;$420</strong>
+          to attend, isolate, replace the failed braided hose with a quality unit, check
+          the others and dry-test &mdash; with a Certificate of Compliance where the work
+          is prescribed under the Victorian Plumbing Regulations 2018.
+        </p>
+
+        <h3 style="margin-top: 2rem;">First steps while we are on the way.</h3>
+        <ul>
+          <li><strong>Water leak or burst:</strong> turn the mains off at the water meter (usually near the front boundary), open a tap to drain pressure.</li>
+          <li><strong>Gas leak:</strong> off at the meter, ventilate, no switches, no flames, everyone outside, call from outside.</li>
+          <li><strong>Sewer overflow:</strong> stop using all water in the house, keep kids and pets away from the overflow.</li>
+          <li><strong>Hot water unit leaking:</strong> turn off the isolation valve and the power/gas to the unit if safe to reach.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Plumbing emergency in Pakenham?</h2>
+        <p>Call now &mdash; we will make it safe and fix it. 24/7 across the Cardinia Shire.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Get a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

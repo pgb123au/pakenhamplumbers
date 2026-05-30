@@ -1,0 +1,130 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer emergency plumbing in Cardinia Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes &mdash; we run a 24/7 emergency plumber service across Cardinia Lakes 3810 for burst pipes, sewer overflows, gas leaks and no hot water. As an early-2000s estate, Cardinia Lakes has plenty of ageing pipework and original hot water units, so winter emergency call-outs here are common. Call (03) 9003 0108 any time." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do drains block so often in Cardinia Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cardinia Lakes was built out in the early 2000s and its street and garden trees are now 15-20 years old. The roots have reached the clay-bedded sewer and stormwater lines and are causing the estate's first real wave of root-intrusion blockages. We CCTV the line to find the exact entry point, hydro-jet and cut the roots, and can reline a cracked pipe without digging." }
+    },
+    {
+      "@type": "Question",
+      "name": "My Cardinia Lakes hot water unit is about 15 years old &mdash; should I replace it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Very likely. The original hot water units across Cardinia Lakes are now in the 10-15 year replacement window and are failing in batches. If yours gives rusty water, pools at the base, knocks, or runs cold quickly, replace it before it fails on a cold morning. We can do a same-day like-for-like changeover with a tempering valve and Certificate of Compliance, typically around $2,100 fitted." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you licensed to work in Cardinia Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes &mdash; we are VBA-licensed plumbers working to AS/NZS 3500 (and AS/NZS 5601 for gas) and we issue a Certificate of Compliance on prescribed work, meeting South East Water connection and backflow requirements under the Victorian Plumbing Regulations 2018." }
+    }
+  ]
+};
+---
+<Layout
+  title="Plumber Cardinia Lakes | Emergency, Hot Water, Drains | (03) 9003 0108"
+  canonical="https://pakenhamplumbers.com.au/cardinia-lakes/"
+  description="Local plumber for Cardinia Lakes 3810 &mdash; 24/7 emergency, blocked drains, hot water replacement, burst pipes &amp; gas fitting. Early-2000s estate specialists: ageing units &amp; the first wave of tree-root drain blockages. VBA-licensed.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Cardinia Lakes &middot; 3810</span>
+      <h1>Plumber in <span class="accent">Cardinia Lakes</span>.</h1>
+      <p class="hero-sub">
+        Cardinia Lakes is one of Pakenham&rsquo;s big early-2000s estates &mdash; and that
+        age shows in the plumbing. Hot water units are hitting the 10&ndash;15 year
+        replacement window, fixtures are ageing, and the estate&rsquo;s maturing trees are
+        driving the first real wave of blocked-drain call-outs. We handle all of it.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Cardinia Lakes</span>
+      <h2>The Cardinia Lakes plumbing story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>An estate hitting its replacement window.</h3>
+        <p>
+          Built out in the early 2000s, Cardinia Lakes is now 15 to 20 years old. The
+          original gas and electric hot water units installed when the estate went up are
+          built to last 10&ndash;15 years &mdash; which is exactly where they are now,
+          failing in batches especially on cold winter mornings. We carry the common
+          Rheem, Rinnai, Dux and Aquamax units and can usually do a same-day
+          <a href="/services/hot-water-systems/">hot water replacement</a> with a tempering
+          valve and Certificate of Compliance, typically around $2,100 fitted.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The first wave of tree-root drains.</h3>
+        <p>
+          The fast-growing street and garden trees planted when Cardinia Lakes was built
+          are now mature, and their roots have reached the clay-bedded sewer and
+          stormwater lines. That is driving the estate&rsquo;s first real wave of
+          <a href="/services/blocked-drains/">blocked drains</a> &mdash; roots mat up at a
+          joint and trap grease and wipes. We CCTV the line to find the exact entry point,
+          hydro-jet and cut the roots, and where the pipe is cracked we can reline it
+          without digging up the yard.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Ageing fixtures &amp; pipework.</h3>
+        <p>
+          Twenty years on, the original tapware, toilet cisterns, flexi-hoses and copper
+          are reaching the end of their seal life. We see worn mixers, running toilets,
+          weeping connections and the occasional burst flexi-hose &mdash; the last one a
+          common cause of indoor flooding. We recommend replacing braided flexi-hoses
+          every 5&ndash;7 years before they let go.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Cardinia Lakes jobs.</h3>
+        <ul>
+          <li>Same-day hot water unit changeover (gas or electric) &mdash; ~$1,400&ndash;$2,600</li>
+          <li>Tree-root blocked sewer: CCTV + hydro-jet + root cut &mdash; ~$450&ndash;$650</li>
+          <li>Burst flexi-hose flooding under a sink &mdash; 24/7 emergency call-out</li>
+          <li>Tap, toilet and mixer replacements as the estate&rsquo;s fixtures age</li>
+          <li><a href="/services/gas-fitting/">Gas appliance</a> connections and CO testing on older heaters</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Need a plumber in Cardinia Lakes?</h2>
+        <p>Emergency or everyday. Same-day hot water, drain clearing, gas fitting &mdash; all with a CoC.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Get a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

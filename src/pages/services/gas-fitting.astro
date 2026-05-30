@@ -1,0 +1,137 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a licensed gas fitter cost in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A gas leak make-safe and repair in Pakenham and Cardinia typically runs $200-$600, a new gas appliance connection (cooktop, heater, BBQ point) $250-$650 plus the appliance, and a new gas point or line run $400-$1,200 depending on distance and access. Worked example: a Heritage Springs home connecting a new gas cooktop and adding an outdoor BBQ bayonet usually pays around $550-$850 including the run, the connection, a leak test, carbon-monoxide check and an AS/NZS 5601 Certificate of Compliance." }
+    },
+    {
+      "@type": "Question",
+      "name": "I can smell gas &mdash; what should I do?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Turn the gas off at the meter, open doors and windows to ventilate, do NOT turn lights or switches on or off, do not use a phone inside near the leak, put out any flames, get everyone outside, then call us on (03) 9003 0108 from outside. We are licensed gas fitters &mdash; we make the gas safe, find the leak, test to AS/NZS 5601 and carbon-monoxide test the appliances before reconnecting." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you carbon-monoxide test gas heaters?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Ageing gas ducted and space heaters &mdash; common in the early-2000s Cardinia Lakes, Lakeside and Heritage Springs estates &mdash; can develop cracked heat exchangers that leak carbon monoxide, which is odourless and dangerous. We carbon-monoxide test gas heaters as part of servicing and after any gas work, in line with AS/NZS 5601. If you have an older gas heater that has never been CO-tested, get it checked before winter." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a Certificate of Compliance required for gas work in Victoria?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Prescribed gas fitting work in Victoria legally requires a licensed gas fitter and a Certificate of Compliance (CoC). We are VBA-licensed for gas, work to AS/NZS 5601 (Gas installations), and issue a CoC on every applicable job &mdash; whether it is a new cooktop connection, a heater install, a gas point run or a gas leak repair." }
+    }
+  ]
+};
+---
+<Layout
+  title="Gas Fitting &amp; Gas Leaks Pakenham | Licensed Gas Fitter | (03) 9003 0108"
+  canonical="https://pakenhamplumbers.com.au/services/gas-fitting/"
+  description="Licensed gas fitter for Pakenham, Officer, Cardinia Lakes &amp; Cardinia Shire. Gas leak detection &amp; repair, appliance &amp; cooktop connection, gas points, carbon-monoxide testing and AS/NZS 5601 Certificates of Compliance. From $200.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Licensed gas fitting &middot; AS/NZS 5601</span>
+      <h1>Gas fitting &amp; leaks in <span class="accent">Pakenham &amp; the Cardinia Shire</span>.</h1>
+      <p class="hero-sub">
+        Licensed gas fitting done right &mdash; appliance and cooktop connections, new gas
+        points and line runs, gas leak detection and repair, plus carbon-monoxide testing
+        on ageing heaters. Every job to AS/NZS 5601 with a Certificate of Compliance.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Gas work we do.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Gas leak detection &amp; repair.</h3>
+        <p>
+          A gas smell is an emergency. Turn it off at the meter, ventilate, avoid switches
+          and flames, get everyone outside and call us. We make the gas safe, trace the
+          leak with electronic detection and a pressure test to <strong>AS/NZS 5601</strong>,
+          repair it, and only reconnect once it is safe. A gas leak make-safe and repair
+          typically runs <strong>$200&ndash;$600</strong>. See also
+          <a href="/services/emergency-plumber/">24/7 emergency plumbing</a>.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Appliance &amp; cooktop connections.</h3>
+        <p>
+          Connecting a new gas cooktop, oven, space heater, gas log fire or BBQ point is
+          prescribed gas work &mdash; it needs a licensed gas fitter and a Certificate of
+          Compliance. A new appliance connection is usually $250&ndash;$650 plus the
+          appliance. We size the line correctly so the appliance gets the gas it needs
+          without starving other appliances.
+        </p>
+
+        <h3 style="margin-top: 2rem;">New gas points &amp; line runs.</h3>
+        <p>
+          Adding a gas point to a kitchen, an outdoor BBQ bayonet, or running a new line
+          for a heater or hot water unit runs <strong>$400&ndash;$1,200</strong> depending
+          on the distance and access. Worked example: a Heritage Springs home connecting a
+          new gas cooktop and adding an outdoor BBQ bayonet usually pays around
+          <strong>$550&ndash;$850</strong> including the run, the connection, a leak test,
+          a carbon-monoxide check and an AS/NZS 5601 Certificate of Compliance.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Carbon-monoxide testing.</h3>
+        <p>
+          Ageing gas ducted and space heaters &mdash; common in the early-2000s
+          <strong>Cardinia Lakes, Lakeside and Heritage Springs</strong> estates &mdash;
+          can develop cracked heat exchangers that leak carbon monoxide, which is odourless
+          and dangerous. We carbon-monoxide test gas heaters as part of servicing and after
+          any gas work. If you have an older gas heater that has never been CO-tested, get
+          it checked before winter.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Compliance you can rely on.</h3>
+        <ul>
+          <li>VBA-licensed gas fitting</li>
+          <li>All work to <strong>AS/NZS 5601</strong> (Gas installations)</li>
+          <li>Certificate of Compliance on every prescribed job</li>
+          <li>Carbon-monoxide testing on gas appliances</li>
+          <li>Coordinated with hot water and emergency work on the same visit where needed</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Need a licensed gas fitter in Pakenham?</h2>
+        <p>Leaks, connections, gas points, CO testing. CoC on every job. Smell gas? Make it safe and call now.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Get a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

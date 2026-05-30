@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a plumber cost in Pakenham in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most Pakenham and Cardinia Shire plumbing falls in these 2026 bands: a standard call-out and first hour runs $130-$220, after-hours emergency call-out $180-$330. Common jobs: clearing a blocked drain $180-$450 (more with hydro-jet or CCTV), replacing a hot water unit $1,400-$3,200 fitted depending on type, repairing a burst or leaking pipe $250-$700, a gas leak make-safe and repair $200-$600. Worked example: a Cardinia Lakes family with a dead 12-year-old gas storage hot water unit on a cold July morning typically pays around $2,100 for a like-for-like Rheem/Rinnai changeover including removal, new unit, tempering valve, fittings and a Certificate of Compliance, completed same day." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer 24/7 emergency plumbing in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We run a 24/7 emergency plumber service across Pakenham, Officer, Cardinia Lakes, Lakeside, Heritage Springs, Beaconsfield and the wider Cardinia Shire. Burst pipes, sewer overflows, no hot water, gas leaks and major leaks are attended day or night. For a gas leak, turn the gas off at the meter, ventilate, avoid switches and flames, and call us on (03) 9003 0108 straight away." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do drains keep blocking in Cardinia Lakes and the older estates?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The early-2000s estates &mdash; Cardinia Lakes, Lakeside, Heritage Springs &mdash; were planted with fast-growing street and garden trees that are now 15-20 years old. Their roots have reached the clay-bedded sewer and stormwater lines and find the smallest joint gap, then mat up and trap grease and wipes. We use a CCTV drain camera to find the exact blockage, hydro-jet to clear it, and mechanically cut roots. Where a pipe is cracked or collapsed we can reline it without digging up your yard." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you a licensed plumber and do you give a Certificate of Compliance?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We are VBA-licensed plumbers working to AS/NZS 3500 (Plumbing &amp; Drainage) and, for gas, AS/NZS 5601 with carbon-monoxide testing. Prescribed plumbing and gas work in Victoria legally requires a Certificate of Compliance (CoC), and we issue one on every applicable job. We also meet South East Water connection and backflow-prevention requirements and work under the Victorian Plumbing Regulations 2018." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a hot water system last and when should I replace it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Gas and electric storage units typically last 10-15 years; that is exactly the window the original Cardinia Lakes and Lakeside estate units are now in. Signs it is on the way out include rusty or discoloured hot water, leaking from the base of the tank, knocking noises, or running cold faster than it used to. If yours fails we can usually replace it same day with a like-for-like gas, electric, heat-pump or solar unit (Rheem, Rinnai, Dux, Aquamax) and fit a tempering valve and Certificate of Compliance." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pakenham Plumbers | Emergency, Hot Water, Drains, Gas | (03) 9003 0108"
+  canonical="https://pakenhamplumbers.com.au/"
+  description="Local licensed plumbers for Pakenham, Officer, Cardinia Lakes, Lakeside, Heritage Springs and the wider Cardinia Shire. 24/7 emergency plumbing, blocked drains, hot water, burst pipes, gas fitting. VBA-licensed. Certificate of Compliance on every job.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Pakenham &middot; Officer &middot; Cardinia Lakes &middot; Cardinia Shire</span>
+      <h1>Pakenham&rsquo;s local <span class="accent">emergency &amp; everyday</span> plumbers.</h1>
+      <p class="hero-sub">
+        Blocked drains, hot water, burst &amp; leaking pipes, gas fitting and 24/7
+        emergencies. Across Pakenham, Officer, Cardinia Lakes and the Cardinia Shire
+        growth corridor. VBA-licensed. Certificate of Compliance on every job.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>24/7</strong>Emergency call-outs</div>
+        <div><strong>Same day</strong>Hot water replacement</div>
+        <div><strong>CoC</strong>Compliance on every job</div>
+        <div><strong>VBA</strong>Licensed &amp; insured</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we do</span>
+      <h2>Five core plumbing services.</h2>
+      <p class="section-lead">
+        From a midnight burst pipe in an Officer new build to a tree-root blocked drain
+        in Cardinia Lakes, we cover the everyday and the emergency. Licensed gas fitting
+        included.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/emergency-plumber/">
+          <div class="svc-icon" aria-hidden="true">&#9888;</div>
+          <h3>24/7 emergency plumber</h3>
+          <p>Burst pipes, sewer overflows, gas leaks, no hot water and flooding &mdash; rapid response day or night across Pakenham &amp; Cardinia. After-hours call-out $180&ndash;$330.</p>
+          <span class="svc-link">See emergency plumbing &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/blocked-drains/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Blocked drains</h3>
+          <p>CCTV drain camera, hydro-jet clearing and root cutting for tree-root, grease and collapsed-pipe blockages. Typical clear $180&ndash;$450. No-dig pipe relining available.</p>
+          <span class="svc-link">See blocked drains &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/hot-water-systems/">
+          <div class="svc-icon" aria-hidden="true">&#9832;</div>
+          <h3>Hot water systems</h3>
+          <p>Same-day repair and replacement of gas, electric, heat-pump and solar hot water &mdash; Rheem, Rinnai, Dux, Aquamax. Fitted from $1,400&ndash;$3,200 with tempering valve and CoC.</p>
+          <span class="svc-link">See hot water systems &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/burst-leaking-pipes/">
+          <div class="svc-icon" aria-hidden="true">&#9745;</div>
+          <h3>Burst &amp; leaking pipes</h3>
+          <p>Leak detection, pipe repair and relining for burst, corroded and slab-leak pipework. We isolate fast to minimise water damage. Repairs from $250&ndash;$700.</p>
+          <span class="svc-link">See burst &amp; leaking pipes &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/gas-fitting/">
+          <div class="svc-icon" aria-hidden="true">&#9832;</div>
+          <h3>Gas fitting &amp; leaks</h3>
+          <p>Licensed gas fitting, appliance install, leak detection and AS/NZS 5601 Certificates of Compliance with carbon-monoxide testing. Make-safe and repair $200&ndash;$600.</p>
+          <span class="svc-link">See gas fitting &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Cardinia local</span>
+      <h2>Three things that drive plumbing work in Pakenham right now.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>A growth corridor that never stops building.</h3>
+          <p>
+            Pakenham and Cardinia are one of Victoria&rsquo;s fastest-growing areas,
+            adding roughly <strong>255 new dwellings a year</strong> with the
+            Pakenham East precinct alone planned for 7,000+ homes. Every new house in
+            Officer&rsquo;s Arena and Timbertop estates needs fit-off, a new hot water
+            unit, gas connection and warranty plumbing &mdash; and South East Water
+            backflow and Certificate of Compliance sign-off on top.
+          </p>
+        </div>
+        <div>
+          <h3>Early-2000s estates hitting the replacement window.</h3>
+          <p>
+            The first big estate wave &mdash; <strong>Cardinia Lakes, Lakeside and
+            Heritage Springs</strong> &mdash; is now 15 to 20 years old. Hot water
+            units (built to last 10&ndash;15 years) are failing in batches, tapware and
+            toilets are reaching the end of their seals, and the estates&rsquo; maturing
+            street trees are sending roots into the sewer and stormwater lines &mdash;
+            the first real wave of blocked-drain call-outs.
+          </p>
+        </div>
+        <div>
+          <h3>Cold winters and compliance you cannot skip.</h3>
+          <p>
+            Single-digit Cardinia winter nights and frosts spike hot-water failures and
+            burst-pipe call-outs in July and August. And in Victoria, prescribed
+            plumbing and gas work is regulated &mdash; we work to <strong>AS/NZS 3500</strong>
+            for plumbing and drainage and <strong>AS/NZS 5601</strong> for gas with
+            carbon-monoxide testing on ageing gas appliances, and issue a Certificate of
+            Compliance under the Victorian Plumbing Regulations 2018 on every applicable
+            job.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we work.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        We cover the full Cardinia Shire and the growth corridor &mdash; from Officer in
+        the west through Pakenham&rsquo;s estates to the semi-rural fringe. Emergency
+        call-outs across all five local areas are our everyday work.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">Cardinia Shire</a>
+        <span class="area-pill area-pill-static">Nar Nar Goon</span>
+        <span class="area-pill area-pill-static">Pakenham Upper</span>
+        <span class="area-pill area-pill-static">Beaconsfield Upper</span>
+        <span class="area-pill area-pill-static">Gembrook</span>
+        <span class="area-pill area-pill-static">Maryknoll</span>
+        <span class="area-pill area-pill-static">Pakenham East</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">Common questions</span>
+      <h2>Pakenham plumbing FAQs.</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 1.75rem; max-width: 60rem;">
+        <div>
+          <h3>How much does a plumber cost in Pakenham in 2026?</h3>
+          <p>
+            A standard call-out and first hour runs <strong>$130&ndash;$220</strong>;
+            after-hours emergencies $180&ndash;$330. Clearing a blocked drain is
+            $180&ndash;$450, a hot water replacement $1,400&ndash;$3,200 fitted, a burst
+            or leaking pipe repair $250&ndash;$700, and a gas leak make-safe and repair
+            $200&ndash;$600. Worked example: a Cardinia Lakes home with a dead 12-year-old
+            gas storage unit on a cold July morning usually pays around <strong>$2,100</strong>
+            for a same-day like-for-like changeover including removal, new unit, tempering
+            valve, fittings and a Certificate of Compliance.
+          </p>
+        </div>
+        <div>
+          <h3>Do you offer 24/7 emergency plumbing?</h3>
+          <p>
+            Yes &mdash; burst pipes, sewer overflows, no hot water and gas leaks are
+            attended day or night across Pakenham, Officer, Cardinia Lakes, Lakeside,
+            Heritage Springs, Beaconsfield and the wider Cardinia Shire. For a gas leak,
+            turn the gas off at the meter, ventilate, avoid switches and flames, and call
+            (03) 9003 0108.
+          </p>
+        </div>
+        <div>
+          <h3>Why do drains keep blocking in the older estates?</h3>
+          <p>
+            The early-2000s Cardinia Lakes, Lakeside and Heritage Springs estates were
+            planted with fast-growing trees now 15&ndash;20 years old. Their roots have
+            reached clay-bedded sewer and stormwater joints and mat up with grease and
+            wipes. We CCTV the line, hydro-jet and cut the roots, and can reline a cracked
+            or collapsed pipe without digging up the yard.
+          </p>
+        </div>
+        <div>
+          <h3>Are you licensed and do you issue a Certificate of Compliance?</h3>
+          <p>
+            Yes &mdash; we are VBA-licensed plumbers working to AS/NZS 3500 and, for gas,
+            AS/NZS 5601 with carbon-monoxide testing. We issue a Certificate of Compliance
+            on every applicable job and meet South East Water connection and
+            backflow-prevention requirements under the Victorian Plumbing Regulations 2018.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Need a plumber in Pakenham?</h2>
+        <p>Emergency or everyday &mdash; call us now or send a quick quote request. Licensed, insured, CoC on every job.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

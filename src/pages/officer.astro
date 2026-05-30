@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you do plumbing for new builds in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes &mdash; Officer's Arena and Timbertop estates are a constant stream of new homes, and we handle new-build fit-off, hot water connection, gas connection and the warranty plumbing that follows hand-over. We meet South East Water connection and backflow requirements and issue a Certificate of Compliance on the prescribed work." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer emergency plumbing in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes &mdash; 24/7 emergency plumbing across Officer 3809 for burst pipes, no hot water, gas leaks and flooding. New builds are not immune: failed builder-grade flexi-hoses and tap connections are a common early cause of flooding in brand-new estate homes. Call (03) 9003 0108 any time." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you connect a new hot water system and gas in an Officer new build?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes &mdash; we install and connect gas, electric, heat-pump and solar hot water and connect gas cooktops, heaters and BBQ points in Officer new builds, all to AS/NZS 3500 and AS/NZS 5601 with a Certificate of Compliance. Many Officer roofs are solar-ready, so a heat-pump hot water unit paired with daytime solar is a popular, cheap-to-run choice." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a plumber cost in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Standard call-out and first hour is $130-$220 ($180-$330 after hours), a new hot water connection $1,400-$3,200 fitted, and a gas point or appliance connection $250-$650 plus the appliance. Worked example: an Officer new-build owner adding an outdoor gas BBQ bayonet and a garden tap usually pays around $450-$700 including the runs, connections, a gas leak test and a Certificate of Compliance." }
+    }
+  ]
+};
+---
+<Layout
+  title="Plumber Officer | New Builds, Emergency, Hot Water, Gas | (03) 9003 0108"
+  canonical="https://pakenhamplumbers.com.au/officer/"
+  description="Local plumber for Officer 3809 &mdash; new-build fit-off &amp; warranty plumbing, 24/7 emergency, hot water &amp; gas connection. Arena &amp; Timbertop growth-corridor estates. VBA-licensed, South East Water compliant, CoC on every job.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Officer &middot; Arena &middot; Timbertop &middot; 3809</span>
+      <h1>Plumber in <span class="accent">Officer</span>.</h1>
+      <p class="hero-sub">
+        Officer is new-build country &mdash; the Arena and Timbertop estates are adding
+        homes constantly as part of the Cardinia growth corridor. That means new fit-off,
+        new hot water and gas connections, builder-warranty plumbing, and the early
+        failures (flexi-hoses, tap connections) that even brand-new homes can throw up.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Officer</span>
+      <h2>The Officer plumbing story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>A new-build engine room.</h3>
+        <p>
+          The Cardinia corridor adds roughly 255 new dwellings a year, and a big share of
+          that is Officer&rsquo;s Arena and Timbertop estates. Every new house needs
+          fit-off, a hot water unit, gas connection and the South East Water connection and
+          backflow-prevention sign-off &mdash; with a Certificate of Compliance on the
+          prescribed work. We do this work daily.
+        </p>
+
+        <h3 style="margin-top: 2rem;">New hot water &amp; gas connections.</h3>
+        <p>
+          New Officer homes get a fresh <a href="/services/hot-water-systems/">hot water
+          system</a> and gas connection. Many roofs are solar-ready, so a rebate-eligible
+          heat-pump unit paired with daytime solar is a popular, cheap-to-run choice. We
+          also connect gas cooktops, heaters and outdoor BBQ points &mdash; licensed
+          <a href="/services/gas-fitting/">gas fitting</a> to AS/NZS 5601 with a CoC.
+        </p>
+
+        <h3 style="margin-top: 2rem;">New builds still have emergencies.</h3>
+        <p>
+          A brand-new estate home is not immune to a 2am flood. Failed builder-grade
+          braided flexi-hoses and loose tap connections are a common early cause of
+          flooding in new Officer homes. We attend
+          <a href="/services/emergency-plumber/">24/7</a>, isolate fast and replace the
+          failed part with a quality unit &mdash; and we recommend checking flexi-hoses
+          within the first couple of years.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Warranty &amp; first-fixes.</h3>
+        <p>
+          In the first years after hand-over, small things surface &mdash; a weeping
+          connection, a slow-draining waste, a dripping mixer. We sort these out cleanly
+          and can advise whether something falls under your builder&rsquo;s warranty before
+          you pay for it.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Officer jobs.</h3>
+        <ul>
+          <li>New-build hot water + gas connection with CoC</li>
+          <li>Heat-pump hot water paired with solar &mdash; ~$2,800&ndash;$4,500 before rebates</li>
+          <li>Outdoor gas BBQ bayonet + garden tap &mdash; ~$450&ndash;$700</li>
+          <li>Failed builder-grade flexi-hose flooding &mdash; 24/7 emergency</li>
+          <li>Early-life <a href="/services/burst-leaking-pipes/">leak</a> and fixture fixes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Need a plumber in Officer?</h2>
+        <p>New builds, emergencies, hot water and gas &mdash; licensed, compliant, CoC on every job.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Get a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
