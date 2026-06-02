@@ -1,0 +1,207 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why not just jet the drain straight away?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On a lot of the older Pakenham and Toomuc Valley streets the main sewer line out of the house is 100mm vitrified clay or terracotta in 600mm sections with mortar joints. Hitting that with a 4,000 psi jetter as a first move can blow a hairline crack into a collapse and turn a $400 clear into a $7,000 dig. We hand-rod or use an electric eel first to get flow back, then run a CCTV camera to find out what actually caused it. Jetter comes out only when the pipe is sound enough to take it." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a CCTV drain inspection actually show me?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A self-levelling colour camera on a 60-metre push rod with a sonde transmitter on the head. You get a recorded video of the inside of your line from inspection point to the boundary, location and depth of every defect marked on the surface above (we paint a dot on the lawn or driveway), and a written report identifying the pipe material, joint condition, root intrusion, fractures, bellies and the metreage to each. That report is what tells us whether you need a $400 root-cut, a $1,800 spot repair, or a $4,500–$9,000 relining job." }
+    },
+    {
+      "@type": "Question",
+      "name": "Root-cut or full pipe relining — what's the difference in cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A root-cut (mechanical chain-flail or jetter root-cutter through the CCTV-confirmed root mass) is $350–$650 in a typical Pakenham job and buys you 12–36 months before the roots are back. It's the right answer if the pipe itself is structurally sound. A no-dig CIPP (cured-in-place pipe) lining is $250–$450 per metre fitted, so a 12-metre house-to-boundary reline is usually $4,500–$6,500 and is a 50-year fix. Open-cut excavation and pipe replacement sits in between, depending on how deep the line is and what's on top of it." }
+    },
+    {
+      "@type": "Question",
+      "name": "Whose responsibility is the blocked drain — mine or South East Water?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Everything from the fixture to the property boundary is yours. The connection from the boundary into the street main is South East Water's. If the CCTV shows the blockage is past the boundary trap, we tell you and you ring South East Water (no charge to you). If it's inside your boundary, it's a private job. We hit this fence-line question on most main-drain calls and the CCTV is what answers it definitively." }
+    }
+  ]
+};
+---
+<Layout
+  title="Blocked Main Drain Pakenham &mdash; CCTV, Hand-Rod &amp; Jetter | (03) 9003 0108"
+  description="Blocked main drain in Pakenham? We diagnose before we destroy &mdash; hand-rod first, CCTV camera to find the cause, jetter only on sound pipe. Honest pricing on root-cuts vs relining. Cardinia Shire and surrounds."
+  canonical="https://pakenhamplumbers.com.au/blocked-main-drain-pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Diagnose before you destroy</span>
+      <h1>Blocked main drain in <span class="accent">Pakenham</span>? Here's the order we work in.</h1>
+      <p class="hero-sub">
+        Hand-rod or electric eel first to restore flow. CCTV camera to find what caused
+        it. Jetter only when the pipe is sound enough to take it. Honest pricing on
+        whether you need a root-cut or a full reline.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The diagnostic order on a blocked main.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Step 1 &mdash; restore flow with the gentlest tool that works</h3>
+        <p>
+          A blocked main usually announces itself the same way: gurgling from the lowest gully,
+          the shower draining slow, then sewage backing up through the floor waste in the
+          laundry. The first job is to get the line moving again. On a typical Pakenham or
+          Officer property we open the boundary inspection shaft or the back-of-house overflow
+          gully and run an electric eel or hand-rod from there. That's a $250&ndash;$450 visit
+          and it gets the family back to using toilets in 30 to 60 minutes. We have not
+          touched a high-pressure jetter yet, and there's a deliberate reason for that.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Step 2 &mdash; CCTV camera to find out what actually caused it</h3>
+        <p>
+          Clearing the blockage is not the job. Finding out why it blocked is the job. As soon
+          as we have flow we put a self-levelling colour CCTV camera down the line on a 60-metre
+          push rod with a sonde locator on the head. You see the video in real time, and the
+          camera tells us three things: what the pipe is made of (terracotta, PVC, cast iron,
+          earthenware), what condition the joints and structure are in, and exactly what blocked
+          it &mdash; root intrusion at a joint, a sag holding water, a fracture, a wipe or sanitary
+          product, or worse. We paint a marker dot on the surface directly above any defect using
+          the sonde locator, so if we need to dig later, the hole is small and in the right spot.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Step 3 &mdash; THEN we choose the right finishing tool</h3>
+        <p>
+          Now we know what we're dealing with. If it's a tree root at a single joint in sound
+          terracotta pipe, a mechanical root-cutter or a jetter root-head finishes it cleanly. If
+          the camera shows a fractured or partially collapsed section, the jetter does not come
+          out at all &mdash; we quote a dig-up or a no-dig liner. The whole point of doing it in
+          this order is that you don't pay for damage we caused.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Why we don't lead with the jetter on terracotta.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          The original 1970s and 1980s Pakenham, Toomuc Valley and parts of Beaconsfield housing
+          stock was plumbed with 100mm vitrified clay or terracotta sewer lines in 600mm sections
+          jointed with cement mortar. Forty years later the joints have moved, the mortar has
+          shrunk and cracked, and tree roots from the front-yard liquidambars and the back-fence
+          eucalypts have found every gap. The pipe is often still functional &mdash; but it's
+          structurally tender.
+        </p>
+        <p>
+          Hitting that as a first move with a 4,000 psi water jetter does two things. First, it
+          turns a hairline crack at a joint into a circumferential fracture. Second, it scours
+          the inside of an already thin pipe wall and can cause spot collapses. A $400 unblock
+          becomes a $7,000 emergency excavation through a paver driveway. We have inherited a
+          lot of those jobs from other crews, which is why we use CCTV first and the jetter last.
+          On PVC mains laid since the late 1990s &mdash; most of Cardinia Lakes, Lakeside, Heritage
+          Springs and Officer &mdash; we'll happily jet first because the pipe is structurally
+          fine. The rule is: the camera tells us when the jetter is safe.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Root-cut vs full pipe reline &mdash; what does each one cost?</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Mechanical root-cut &mdash; $350 to $650</h3>
+        <p>
+          A chain-flail or jetter root-cutter pulled through the root mass under camera. Right
+          answer when the CCTV report shows root intrusion at one or two joints, pipe otherwise
+          sound, no fractures, no bellies. Buys you 12 to 36 months before the roots come back.
+          A lot of older Pakenham homes are on a yearly or two-yearly root-cut program and that's
+          a perfectly sensible way to manage an old terracotta line you're not ready to reline.
+        </p>
+
+        <h3 style="margin-top: 2rem;">No-dig CIPP relining &mdash; $250 to $450 per metre fitted</h3>
+        <p>
+          Cured-in-place pipe lining. We pull a resin-saturated felt liner through the existing
+          host pipe and inflate it against the walls; the resin cures into a structural pipe-in-
+          pipe with a 50-year design life and no joints for roots to enter. Twelve metres of house-
+          to-boundary reline is typically $4,500&ndash;$6,500 fitted. Done in one day, no trench,
+          no landscape damage, no driveway lifted. Right answer on structurally compromised lines
+          where you'd otherwise have to excavate.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Open-cut excavation and replacement</h3>
+        <p>
+          Sometimes the right answer &mdash; particularly on a collapsed section less than 600mm
+          deep with nothing structural above it. Pricing varies wildly with depth, what we're
+          cutting through (lawn, paver, concrete slab, decking) and reinstatement. We quote
+          this against the relining number so you can choose.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Common questions.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Why not just jet the drain straight away?</h3>
+        <p>
+          Because a lot of older Pakenham mains are terracotta and a jetter as a first move can
+          blow a hairline crack into a collapse. We hand-rod first to get flow back, CCTV to find
+          the cause, and only jet pipes the camera confirms are sound.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What does a CCTV drain inspection actually show me?</h3>
+        <p>
+          Recorded video of the inside of your sewer line, sonde-located surface markers over every
+          defect, and a written report identifying material, joint condition, roots, fractures and
+          bellies. That report is the basis of every repair quote we write.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Root-cut or full pipe relining &mdash; cost difference?</h3>
+        <p>
+          Root-cut is $350&ndash;$650 and buys 12&ndash;36 months. CIPP relining is $250&ndash;$450
+          per metre fitted and is a 50-year fix. Open-cut sits between, depending on depth and
+          reinstatement.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Whose responsibility &mdash; mine or South East Water?</h3>
+        <p>
+          Everything from fixture to boundary trap is yours. The connection from boundary into
+          the street main is South East Water's. The CCTV answers this definitively on every job.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Drain backing up? Ring now.</h2>
+      <p style="max-width: 50rem; margin: 0 auto 2rem;">
+        Diagnose first, destroy nothing. CCTV-reported repair quotes. VBA-licensed plumbers,
+        Cardinia Shire local.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="mailto:quotes@pakenhamplumbers.com.au">Email quotes@pakenhamplumbers.com.au</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,228 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What should I do the moment I smell gas inside the house?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Four things, in order. (1) Get everyone outside, including pets. (2) Open windows and doors on your way out if you can do it without stopping. (3) Once you're outside, turn the gas off at the meter — the lever is on the inlet side of the regulator; quarter-turn so the lever is across the pipe = off. (4) Ring us, or for a strong leak ring 132 771 (the South East Australia gas leak line) first. Do not switch lights, fans or extractors on or off, do not use the phone inside the house, and do not light anything. A spark from a switch is enough." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the meter reader or my electrician fix it instead?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Gas leak investigation and repair downstream of the meter is licensed work that only a Victorian Class A gasfitter can do, and we have to certify it. The network operator (the meter reader's company) is responsible for the supply up to and including the meter; everything past the meter outlet is your property and our work. An electrician cannot touch it. Doing it yourself is illegal and uninsurable — and the Energy Safe Victoria (ESV) audit team does follow up on incidents." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the AS/NZS 5601 leak testing process actually involve?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Once the appliance isolation valves are off we pressurise the installation to a defined test pressure (commonly 7 kPa for natural gas consumer piping) using a calibrated manometer, then watch for any pressure drop over a timed test — AS/NZS 5601.1 specifies the duration based on pipe volume. Zero drop = tight. Any drop and we localise with electronic methane sniffer and leak-detection fluid joint-by-joint, repair, then re-test. We finish by re-commissioning each appliance and verifying flame quality and CO levels with a combustion analyser." }
+    },
+    {
+      "@type": "Question",
+      "name": "What has to be on the gas compliance certificate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Under Victorian law every Class A gasfitter who works on a gas installation must issue a Certificate of Compliance through the ESV portal within 5 business days. The certificate names the licensed gasfitter and licence number, the property address, a description of the work, the standards complied with (AS/NZS 5601.1 and any appliance-specific standards), and a statement that the installation has been pressure-tested and is gas-tight. You should receive a copy by email and a paper copy on the day. Keep it — your insurer and any future buyer's conveyancer will ask for it." }
+    }
+  ]
+};
+---
+<Layout
+  title="Gas Leak Detection Pakenham &mdash; Class A Gasfitter | (03) 9003 0108"
+  description="Smell gas in Pakenham? What to do (and what NOT to do) before the Class A gasfitter arrives. AS/NZS 5601 pressure testing, electronic sniffer leak localisation, ESV Certificate of Compliance on every job."
+  canonical="https://pakenhamplumbers.com.au/gas-leak-detection-pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Class A licensed gasfitter &mdash; ESV registered</span>
+      <h1>Gas leak in <span class="accent">Pakenham</span>? What to do before we arrive.</h1>
+      <p class="hero-sub">
+        Four things to do, two things not to do. Then we run an AS/NZS 5601.1 pressure test,
+        electronically sniff every joint, repair, re-test and issue your ESV Certificate of
+        Compliance.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>If you can smell gas inside the house, do these four things.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>1. Get everyone outside, including pets.</h3>
+        <p>
+          The mercaptan additive that gives natural gas its rotten-egg smell is deliberately
+          strong &mdash; you can detect it well below the lower explosive limit. That is good
+          news: if you can smell it, you almost certainly have time to leave calmly. Walk the
+          family and the dog out the front door and move across the street or to the front
+          of the property. Don't go back in for anything.
+        </p>
+
+        <h3 style="margin-top: 2rem;">2. Open windows and doors on the way out (only if it's on your path).</h3>
+        <p>
+          Cross-ventilation drops the concentration fast. But only do this if a window is
+          literally on your route out &mdash; don't detour through the house to open things.
+          The priority is getting outside, not airing the building.
+        </p>
+
+        <h3 style="margin-top: 2rem;">3. Once outside, turn off the gas at the meter.</h3>
+        <p>
+          The gas meter on a typical Pakenham, Officer or Cardinia Lakes house is on the
+          side or front of the building in a small enclosure. The shutoff is a lever on the
+          inlet side of the regulator: lever in-line with the pipe = on, lever across the
+          pipe (90 degrees) = off. Quarter-turn by hand, no tools needed. If the lever is
+          stiff or seized, leave it &mdash; don't force it. Ring us and we'll handle it.
+        </p>
+
+        <h3 style="margin-top: 2rem;">4. Ring us &mdash; or 132 771 for a serious leak.</h3>
+        <p>
+          For a faint or transient smell, ring us on (03) 9003 0108 and we'll come on
+          priority. For a strong, persistent smell or a hissing sound at the meter, ring the
+          South East Australia gas leak line on <strong>132 771</strong> first &mdash; the
+          network operator dispatches an emergency response crew at no charge to you. They
+          make the property safe; we then repair and certify the installation.
+        </p>
+
+        <h3 style="margin-top: 2rem;">And the two things NOT to do.</h3>
+        <ul>
+          <li>
+            <strong>Do not operate any electrical switch, fan, light, garage door, extractor or
+            appliance &mdash; on OR off.</strong> The arc inside a switch as the contacts open or
+            close is more than enough to ignite a gas-air mixture in the explosive range. This
+            includes the exhaust fan you might instinctively reach for.
+          </li>
+          <li>
+            <strong>Do not use a phone, doorbell or smoke alarm test button inside the house.</strong>
+            Use your mobile from outside. No naked flames, no candles, no cigarettes &mdash; obvious,
+            but worth saying.
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>What we actually do on-site.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Gas-sniffer testing &mdash; finding the leak</h3>
+        <p>
+          The van runs a flame-ionisation methane sniffer (sensitive down to a few ppm) and a
+          backup electrochemical detector. We sweep the meter, regulator, every visible joint,
+          every isolation valve, every appliance connection and the wall-penetration points. The
+          sniffer audibly chirps faster as concentration rises, which makes localising a leak to
+          a specific joint genuinely quick &mdash; usually inside 20 minutes once we're on-site
+          and the system is depressurised and re-charged for testing.
+        </p>
+
+        <h3 style="margin-top: 2rem;">AS/NZS 5601.1 pressure testing</h3>
+        <p>
+          The standards-compliant test that confirms the entire installation is tight. We close
+          every appliance isolation valve, charge the consumer piping to the test pressure
+          specified in AS/NZS 5601.1 (commonly 7 kPa for natural gas), connect a calibrated
+          digital manometer at a test point, and watch for any drop over the timed test &mdash;
+          the standard sets the duration based on pipe volume. Zero pressure drop is the only
+          pass criterion. Any drop, any drift, and we leak-fluid every joint until we find it,
+          repair it, and re-test from the start.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Re-commission and combustion check</h3>
+        <p>
+          Tight installation isn't the whole job. Once the leak is sealed we re-open the
+          appliances one at a time, purge any air from the lines, light each appliance and run
+          it under load with a combustion analyser at the flue to verify flame quality, gas
+          rate, and that carbon monoxide is within AS 4575 limits. A leaking joint and a
+          mis-tuned heater can both kill you. We check both.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The Certificate of Compliance &mdash; what must be on it.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Every Victorian Class A gasfitter is required by the Gas Safety Act to lodge a
+          Certificate of Compliance through the Energy Safe Victoria (ESV) portal within 5
+          business days of completing gasfitting work. You should get a copy by email and a
+          paper copy on the day. The certificate must show:
+        </p>
+        <ul>
+          <li>Licensed gasfitter's name and ESV licence number (verifiable on the ESV register)</li>
+          <li>Property address</li>
+          <li>Description of the work performed</li>
+          <li>Standards complied with &mdash; AS/NZS 5601.1, plus appliance-specific standards (AS 4552 for hot water, AS 4870 for cookers, etc.)</li>
+          <li>Statement that the installation has been pressure-tested and is gas-tight</li>
+          <li>Date of completion</li>
+        </ul>
+        <p>
+          Keep your copy. Your insurer will ask for it after any gas-related claim, your buyer's
+          conveyancer will ask for it at sale, and ESV themselves do random audits.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Common questions.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>What should I do the moment I smell gas inside the house?</h3>
+        <p>
+          Get everyone outside, open windows on the way out if convenient, turn the meter off
+          at the quarter-turn lever, then ring us &mdash; or 132 771 for a strong, persistent
+          leak. No switches, no phones inside, no flames.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Can my electrician or the meter reader fix it?</h3>
+        <p>
+          No. Only a Victorian Class A gasfitter can work on the installation downstream of
+          the meter, and we have to certify it through the ESV portal.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What does AS/NZS 5601 pressure testing involve?</h3>
+        <p>
+          Pressurise the system to the standard test pressure with a calibrated manometer,
+          watch for any drop over the timed test, localise any drop with an electronic
+          sniffer and leak fluid, repair, re-test from the start. Then combustion-analyse each
+          appliance.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What has to be on the Certificate of Compliance?</h3>
+        <p>
+          Gasfitter's name and ESV licence number, address, work description, standards
+          complied with, pressure-tested statement, and date. Lodged via the ESV portal
+          within 5 business days.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Smell gas? Ring now.</h2>
+      <p style="max-width: 50rem; margin: 0 auto 2rem;">
+        Class A licensed Victorian gasfitter. AS/NZS 5601.1 testing. ESV Certificate of
+        Compliance on every job.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="mailto:quotes@pakenhamplumbers.com.au">Email quotes@pakenhamplumbers.com.au</a>
+      </div>
+    </div>
+  </section>
+</Layout>

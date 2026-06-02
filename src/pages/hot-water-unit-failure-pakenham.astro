@@ -1,0 +1,201 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you actually do a same-day hot water swap in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If you ring before about 11am on a weekday and the unit is a common gas storage, continuous-flow or electric storage in a standard external or laundry position, the answer is almost always yes. We carry Rheem, Rinnai, Dux and Aquamax stock on the van and pull from local Pakenham and Officer trade suppliers, so a like-for-like changeover, tempering valve fitted to AS/NZS 3500.4 and a Certificate of Compliance is realistic same-day. Heat-pump swaps and any job needing trenching or a gas-line upsize roll into next-day." }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the three most common ways an 8 to 15 year old unit dies?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On Pakenham's hard-ish water and the original early-2000s Lakeside and Heritage Springs builds we see: (1) tank corrosion failure — the sacrificial anode is gone and the cylinder has rusted through, usually announced by water on the slab; (2) gas valve, thermocouple or burner failure on storage gas — pilot won't stay lit, no hot water but no leak; (3) element and thermostat failure on electric storage — tripped circuit, lukewarm water, or no water at all. The first one is terminal; the other two are often a $200–$500 repair if the tank itself is sound." }
+    },
+    {
+      "@type": "Question",
+      "name": "Gas, electric or heat-pump — what should I replace it with?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Honest answer depends on what you've already got plumbed and powered. If the existing unit is gas storage and the gas line is sized correctly, a like-for-like gas swap is the cheapest and fastest path — fitted $1,400–$2,600. Continuous-flow gas suits big families and small spaces, $1,800–$2,900 fitted. Heat-pump is the cheapest to run, especially paired with daytime solar, $2,800–$4,500 before VEU rebate. Electric storage only makes sense on off-peak tariff or a small household. We'll give you both numbers at the quote." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I get the VEU rebate on a hot water changeover?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The Victorian Energy Upgrades (VEU) program rebates eligible heat-pump and solar hot water replacements when an existing electric or gas unit is swapped out. The accredited provider claims the VEECs and discounts your invoice — you don't lodge anything yourself. A typical Pakenham heat-pump changeover sees $800–$1,800 off the upfront price depending on model and household size. We'll confirm eligibility before the quote so there are no surprises." }
+    }
+  ]
+};
+---
+<Layout
+  title="Hot Water Unit Failure Pakenham &mdash; Same-Day Swap | (03) 9003 0108"
+  description="Hot water dead in Pakenham? We do same-day like-for-like swaps on gas, electric and continuous-flow units. Honest diagnosis, VEU rebate on heat-pump changeovers, Certificate of Compliance on every job."
+  canonical="https://pakenhamplumbers.com.au/hot-water-unit-failure-pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Same-day &amp; next-day swap turnaround</span>
+      <h1>Hot water unit failed in <span class="accent">Pakenham</span>? We can usually swap it today.</h1>
+      <p class="hero-sub">
+        Cold shower at 6am is not the morning you planned. Ring before 11am on a weekday
+        and a like-for-like gas, electric or continuous-flow changeover &mdash; tempering valve
+        and Certificate of Compliance included &mdash; is almost always same-day across
+        Pakenham, Officer, Cardinia Lakes and Beaconsfield.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Same-day vs next-day &mdash; what's actually possible.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Same-day (ring before about 11am)</h3>
+        <p>
+          A like-for-like swap of a gas storage, continuous-flow gas or electric storage unit
+          in a normal external, garage or laundry position is the textbook same-day job.
+          We carry Rheem, Rinnai, Dux and Aquamax stock on the van and pull from the local
+          Pakenham and Officer trade suppliers when we need a specific model. The work itself
+          is usually 90 minutes to three hours: isolate, drain, disconnect, remove, install,
+          repipe to AS/NZS 3500.4, fit a compliant 50&deg;C tempering valve to outlets, gas-test
+          if applicable, commission and issue your Certificate of Compliance. You're showering
+          again that evening.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Next-day</h3>
+        <p>
+          Heat-pump replacements are next-day in almost every case &mdash; the unit footprint,
+          condensate drain and electrical work mean we're not winging it. Any job that needs
+          a gas-line upsize (common when moving from a 135L storage to a 26L/min continuous-flow),
+          a new electrical circuit, a slab penetration or trenching also rolls to the next day.
+          We'll be straight with you on the phone about which side of the line your job sits.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Booked for next week (and that's fine)</h3>
+        <p>
+          If your unit is still limping and you've got time, the unhurried quote &mdash; both gas
+          and heat-pump prices on the table, VEU eligibility checked, the right unit specified for
+          your household size &mdash; almost always saves a few hundred dollars over the emergency
+          same-day job. If you can wait, wait. If you can't, we'll move.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>The three failure modes we see on 8 to 15 year old Pakenham units.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>1. Tank corrosion failure (terminal)</h3>
+        <p>
+          The sacrificial magnesium anode inside the cylinder is, by design, the part that
+          corrodes so the steel tank doesn't. Almost no one in Pakenham replaces theirs at the
+          5-year mark, so by year 10&ndash;15 the anode is gone and the tank itself starts to
+          rust through from the inside. You'll see rusty hot water at the tap first, then
+          water pooling around the base of the unit or running across the slab. Once the tank
+          has perforated, the unit is done &mdash; no economical repair. This is the typical
+          early-2000s Lakeside, Heritage Springs and Cardinia Lakes story right now.
+        </p>
+
+        <h3 style="margin-top: 2rem;">2. Gas valve, thermocouple or burner failure (repairable)</h3>
+        <p>
+          On a gas storage unit the pilot won't stay lit, or it lights but the burner won't fire.
+          No leaks, no rust &mdash; just no hot water. A failed thermocouple is a $180&ndash;$280
+          repair, a gas control valve $350&ndash;$550, a burner clean and reseat somewhere in between.
+          We diagnose with a manometer and combustion analyser before quoting a repair. If the
+          tank is sound and under 12 years, repair is the smart call.
+        </p>
+
+        <h3 style="margin-top: 2rem;">3. Element and thermostat failure on electric (repairable)</h3>
+        <p>
+          Electric storage units fail predictably: the lower element burns out, the upper element
+          takes over and gives you a half-tank of warm water, then that goes too. Element plus
+          thermostat plus gasket plus labour usually sits around $300&ndash;$500. Again, if the
+          tank itself is sound, repair is sensible. If you've already replaced an element in the
+          last few years, the second failure usually means the tank is on borrowed time.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Gas vs electric vs heat-pump &mdash; the replacement decision.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          A like-for-like gas storage swap is the cheapest and quickest, $1,400&ndash;$2,600
+          fitted, no electrical changes, no rebate paperwork. Continuous-flow gas is endless
+          hot water in a wall-mounted footprint, $1,800&ndash;$2,900 fitted &mdash; brilliant for
+          a four-bedroom Officer or Cardinia Lakes house with three showers running on a winter
+          morning. Heat-pump is $2,800&ndash;$4,500 before the VEU rebate but the cheapest to run
+          by a country mile, especially if you've got daytime solar to drive the compressor for
+          free. Electric storage is only the right answer on dedicated off-peak. We'll put both
+          the gas number and the heat-pump-after-rebate number on the quote and you choose.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Common questions.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Can you actually do a same-day swap?</h3>
+        <p>
+          If you ring before about 11am on a weekday and the unit is a common gas storage,
+          continuous-flow or electric storage in a standard external or laundry position, the
+          answer is almost always yes. Heat-pump swaps and any job needing trenching or a gas-line
+          upsize roll into next-day.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What are the three most common ways an 8&ndash;15 year old unit dies?</h3>
+        <p>
+          Tank corrosion (terminal), gas valve / thermocouple failure (repairable), and electric
+          element / thermostat failure (repairable). Rusty water or water on the slab almost
+          always means the tank itself is finished.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Gas, electric or heat-pump &mdash; what should I replace it with?</h3>
+        <p>
+          Depends on what's already plumbed and powered. Like-for-like gas is cheapest and fastest.
+          Heat-pump is cheapest to run, especially with daytime solar, and rebate-eligible. We'll
+          put both numbers on the quote.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Do I get the VEU rebate on a hot water changeover?</h3>
+        <p>
+          The Victorian Energy Upgrades program rebates eligible heat-pump and solar replacements.
+          The accredited provider claims the VEECs and discounts your invoice &mdash; you don't
+          lodge anything. A Pakenham heat-pump changeover usually nets $800&ndash;$1,800 off.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner" style="text-align: center;">
+      <h2>No hot water? Ring now.</h2>
+      <p style="max-width: 50rem; margin: 0 auto 2rem;">
+        VBA-licensed, Class A plumbers. Same-day like-for-like swaps. Certificate of Compliance
+        on every job. Honest gas vs heat-pump numbers before we start.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="mailto:quotes@pakenhamplumbers.com.au">Email quotes@pakenhamplumbers.com.au</a>
+      </div>
+    </div>
+  </section>
+</Layout>

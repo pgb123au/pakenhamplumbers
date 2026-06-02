@@ -1,0 +1,227 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where is the main water shutoff on a typical Pakenham house?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three places to check, in this order. (1) The water meter at the front boundary — usually in a green or black plastic pit lid near the footpath. Inside the pit is a ball valve or stop tap on the house side of the meter; that valve is yours to turn. (2) An additional house-side stop tap on the external wall closest to the meter — most newer Cardinia Lakes, Lakeside and Officer builds have one, usually labelled or coloured blue. (3) An internal stop tap under the kitchen sink, in the laundry, or in the garage on the inlet side of the hot water unit. Knowing which one shuts what, before you need it at 2am, is the whole point of testing them twice a year." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why turn it off twice a year — what's the point?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Stop taps and ball valves seize. They sit untouched for years, mineral deposits build up around the seat or the gland, and the first time you actually need them — a burst flexi hose at 11pm flooding your en-suite — they won't budge. A 30-second twice-yearly test (close it, open the kitchen tap to confirm flow has stopped, close the kitchen tap, re-open the valve) keeps the valve free. Best timed with daylight saving changes so you don't have to remember a date." }
+    },
+    {
+      "@type": "Question",
+      "name": "What do I do if the shutoff valve is seized?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Don't crank on it with a long lever — older brass ball valves and gate valves snap off cleanly at the body and turn a quiet weekend into a South East Water dig-up at the boundary. If it won't move with normal hand force, leave it. Ring us. We replace seized boundary-side stop taps with a new quarter-turn ball valve for $280–$450 in a typical Pakenham job, no excavation needed in most cases because the valve sits in the meter pit. If the seized valve is the South East Water meter itself, they replace it for free." }
+    },
+    {
+      "@type": "Question",
+      "name": "When does South East Water handle it versus me?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The water meter and everything on the street side of it is South East Water's. The valve on the house side of the meter, the service pipe from the meter into your house, and everything inside is yours. If you have a leak between the meter and the house (look for unexplained green grass or a damp patch in the front lawn), that's your repair — but South East Water can shut the supply off at the street main for you at no charge while you organise it. Ring them on 13 16 94 (faults) for that." }
+    }
+  ]
+};
+---
+<Layout
+  title="Home Water Shutoff Pakenham &mdash; Where the Valve Is &amp; How to Test It"
+  description="A plain homeowner guide to finding your main water shutoff in Pakenham &mdash; meter pit, external stop tap and internal stops. How to test it twice a year, what to do if it's seized, and when South East Water handles it instead of you."
+  canonical="https://pakenhamplumbers.com.au/home-water-shutoff-pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Homeowner guide</span>
+      <h1>Where the water shutoff is on your <span class="accent">Pakenham</span> house &mdash; and how to test it.</h1>
+      <p class="hero-sub">
+        A burst flexi hose at 11pm in the en-suite vanity dumps 1,200 litres an hour onto your
+        floor. The single most useful 30 seconds you'll ever spend on your house is finding the
+        main shutoff before you need it. Here's where it lives on a typical Pakenham block.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Finding the main shutoff &mdash; three places, in this order.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>1. The water meter at the front boundary</h3>
+        <p>
+          On almost every Pakenham, Officer, Cardinia Lakes, Lakeside, Heritage Springs and
+          Beaconsfield property, the South East Water meter sits in a recessed plastic pit at
+          the front boundary &mdash; close to the footpath, usually within a metre or two of
+          the front fence line. The lid is green, black or occasionally red plastic, hinged or
+          screwed, with the South East Water logo embossed on it. Lift the lid (you may need a
+          flat screwdriver to lever it) and you'll see the meter itself plus two valves: one on
+          the street side (don't touch &mdash; that's theirs) and one on the house side.
+          <strong>The house-side valve is yours to operate.</strong> It's either a ball valve
+          (lever-style, quarter-turn) or a gate valve (round handle, multiple turns). Closed
+          = no water to the house.
+        </p>
+
+        <h3 style="margin-top: 2rem;">2. The external house-side stop tap</h3>
+        <p>
+          Most builds from the late 1990s onwards &mdash; basically all of Cardinia Lakes,
+          Lakeside, Heritage Springs, the newer Officer estates and Beaconsfield infill &mdash;
+          also have a second stop tap mounted on an external wall, usually the wall closest to
+          the meter. It's often painted blue or labelled "Water Main". A quarter-turn lever ball
+          valve. This is the one to use day-to-day &mdash; it's accessible without lifting a
+          pit lid and it isolates everything inside the house.
+        </p>
+
+        <h3 style="margin-top: 2rem;">3. Internal stop taps</h3>
+        <p>
+          You'll usually find at least one internal stop &mdash; under the kitchen sink, in the
+          laundry, or in the garage on the inlet to the hot water unit. These only isolate the
+          section of pipe past them, not the whole house. Useful for fixing a single tap or a
+          flexi hose without shutting down everyone's shower. Worth identifying anyway so you
+          know which valve does what.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>The twice-a-year test &mdash; 30 seconds, hand force only.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          The single most common reason a homeowner stands knee-deep in water unable to stop a
+          leak is that the shutoff valve has been sitting untouched for 12 years and won't turn.
+          Brass ball valves and gate valves seize quietly &mdash; mineral deposits build up at
+          the seat, the gland packing dries out, the lever or handle becomes harder and harder
+          to move. By the time you actually need it, it's stuck or, worse, it snaps off in your
+          hand. Test the valves twice a year &mdash; an easy reminder is to do it when daylight
+          saving changes, so you're not trying to remember a date.
+        </p>
+        <p>
+          The test itself:
+        </p>
+        <ol>
+          <li>Open the cold tap at the kitchen sink so water is flowing.</li>
+          <li>Close the main shutoff (the external blue one is easiest; if you don't have one, use the meter-pit valve). Hand force only &mdash; if it doesn't move with firm hand pressure, stop.</li>
+          <li>Watch the kitchen tap. Within 10 to 30 seconds the flow should drop to a dribble and then stop entirely. That's confirmation the valve actually works.</li>
+          <li>Open the main shutoff again. The kitchen tap should resume full flow within a few seconds.</li>
+          <li>Close the kitchen tap. Done.</li>
+        </ol>
+        <p>
+          That's it. Thirty seconds, twice a year, and you know your shutoff works. Worth doing
+          before you go on holiday, too &mdash; many insurance claims for unattended-property
+          floods would have been a $0 event if the homeowner had isolated water at the meter on
+          the way out.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>If the valve is seized &mdash; don't force it.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          The instinct when a stop tap won't move is to grab a multigrip and lean on it. Don't.
+          Older brass ball valves and gate valves snap cleanly at the body under leverage &mdash;
+          and once the lever or spindle has snapped off, you've turned a $300 valve replacement
+          into a $1,500&ndash;$3,000 service-pipe excavation while South East Water shuts you
+          off at the street main. Hand force only. If it won't go, leave it.
+        </p>
+        <p>
+          A replacement of a seized house-side stop tap in the meter pit is a routine job &mdash;
+          $280&ndash;$450 in a typical Pakenham property because we work in the existing pit, no
+          excavation. We fit a modern lever-style ball valve that you'll be able to operate
+          forever with two fingers. If the seized valve is the South East Water meter itself,
+          their crew replaces it free.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>When South East Water handles it vs when you do.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>South East Water's responsibility (free to you)</h3>
+        <ul>
+          <li>The meter itself and the street-side meter valve</li>
+          <li>The service line from the street main to and including the meter</li>
+          <li>Emergency street-main shutoff if you have a burst on your side and need supply killed while you fix it</li>
+          <li>Faults: <strong>13 16 94</strong>, 24/7</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Your responsibility (private plumbing)</h3>
+        <ul>
+          <li>The house-side stop tap in the meter pit (yes &mdash; even though it's inside SEW's pit)</li>
+          <li>The service pipe from the meter into the house</li>
+          <li>Everything inside the boundary: external wall stop tap, internal stops, fixtures, hot water unit, all of it</li>
+          <li>Any leak in the service line between meter and house (look for unexplained green grass or a wet patch in the front lawn)</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Common questions.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Where is the main shutoff on a typical Pakenham house?</h3>
+        <p>
+          Meter pit at the front boundary (green or black lid), an external blue-marked stop tap
+          on the wall nearest the meter on newer builds, and one or more internal stops under
+          the kitchen sink or in the laundry.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why turn it off twice a year &mdash; what's the point?</h3>
+        <p>
+          Valves seize when left alone. A 30-second twice-yearly close-and-reopen keeps the
+          spindle and seat free, so the valve actually works the night you need it. Pair it with
+          daylight saving changes.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What if the valve is seized?</h3>
+        <p>
+          Hand force only. Don't lever on it &mdash; snapped valves turn a $300 job into a
+          $1,500+ excavation. We replace seized house-side stop taps inside the meter pit for
+          $280&ndash;$450, no digging.
+        </p>
+
+        <h3 style="margin-top: 2rem;">When does South East Water handle it?</h3>
+        <p>
+          They own the meter and the service pipe up to the meter. Everything inside the
+          meter pit on the house side, and into the house, is yours. They'll shut you off at
+          the street main for free in an emergency: 13 16 94.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Seized shutoff? Burst pipe? Ring now.</h2>
+      <p style="max-width: 50rem; margin: 0 auto 2rem;">
+        VBA-licensed Pakenham plumbers. Stop tap replacements, burst-pipe repairs, full-property
+        isolation works. Honest pricing, Certificate of Compliance on every job.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="mailto:quotes@pakenhamplumbers.com.au">Email quotes@pakenhamplumbers.com.au</a>
+      </div>
+    </div>
+  </section>
+</Layout>
