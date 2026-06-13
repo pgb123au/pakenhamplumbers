@@ -6,6 +6,7 @@ interface Props {
   description: string;
   canonical?: string;
   ogType?: string;
+  noindex?: boolean;
 }
 
 const SITE = 'https://pakenhamplumbers.com.au';
@@ -14,7 +15,7 @@ const PHONE_TEL = '+61390030108';
 const EMAIL = 'quotes@pakenhamplumbers.com.au';
 const BIZ_NAME = 'Pakenham Plumbers';
 
-const { title, description, canonical = SITE + '/', ogType = 'website' } = Astro.props;
+const { title, description, canonical = SITE + '/', ogType = 'website', noindex = false } = Astro.props;
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
